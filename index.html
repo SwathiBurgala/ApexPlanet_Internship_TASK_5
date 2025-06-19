@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ShopSphere</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="light-theme">
+  <header>
+    <h1>🛍️ ShopSphere</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Products</a>
+      <a href="#">Contact</a>
+    </nav>
+    <div class="theme-toggle">
+      <label for="themeSelect">Theme:</label>
+      <select id="themeSelect">
+        <option value="light">Light</option>
+        <option value="dark">Dark</option>
+      </select>
+    </div>
+  </header>
+
+  <div class="top-cart">
+    <h2>🛒 Cart Summary</h2>
+    <ul id="cartItems" class="cart-list"></ul>
+    <p id="totalPrice"><strong>Total:</strong> ₹0</p>
+  </div>
+
+  <main>
+    <div class="controls">
+      <input type="text" id="searchInput" placeholder="Search products..." />
+      <select id="categoryFilter">
+        <option value="all">All Categories</option>
+        <option value="electronics">Electronics</option>
+        <option value="clothing">Clothing</option>
+        <option value="furniture">Furniture</option>
+      </select>
+      <select id="sortBy">
+        <option value="default">Sort By</option>
+        <option value="priceLowHigh">Price: Low to High</option>
+        <option value="priceHighLow">Price: High to Low</option>
+      </select>
+    </div>
+
+    <div id="productList" class="product-grid"></div>
+  </main>
+
+  <footer>
+    <p>© 2025 ShopSphere | Designed with ❤️ using HTML, CSS & JS</p>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
